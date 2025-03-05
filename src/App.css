@@ -1,0 +1,10 @@
+.primary{
+  font-family: var(--font-primary);
+  
+}
+.secondary{
+font-family: var(--font-secondary);
+}
+.accent{
+  font-family: var(--font-accent);
+}
