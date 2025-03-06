@@ -10,6 +10,9 @@
   list-style-type: none;
   text-decoration: none;
 }
+body {
+  background: var(--light-white);
+}
 
 /* CSS Root Variable  */
 :root {
@@ -19,6 +22,8 @@
 
   /* Primary Red color of software  */
   --primary-red: #d2122e;
+  /* primary Red little faded  */
+  --primary-red-faded: rgba(255, 28, 62, 0.2);
   /* Accent Yellow for features of discounts  */
   --accent-yellow: #ffc107;
   /* Black Dark for text  */
@@ -27,10 +32,37 @@
   --gray-disable: #989898;
   /* Green for sucess  */
   --sucess-green: #2ecc71;
+  /* Green dark  */
+  --green-dark:#00A550;
   /* Orange for Warning  */
   --warning-orange: #f77f00;
   /* Light White for background  */
   --light-white: #f8f9fa;
+  /* White color  */
+  --white: #ffffff;
   /* for cards and contrast  */
   --gray-tone: #e0e0e0;
+  /* test orange  */
+  --test-primary: #fc8019;
+
+  /* Gray Shadow Tone light  */
+  --gray-shadow-light: 0px 0px 4px 2px var(--gray-tone);
+}
+
+
+
+/* Layout for all the Pages exculding dashboard  */
+.global-parent-layout {
+  display: grid;
+  grid-template-columns: .8fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.global-div1 {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.global-div2 {
+  grid-area: 1 / 2 / 6 / 6;
 }
