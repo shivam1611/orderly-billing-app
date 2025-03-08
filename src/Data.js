@@ -1,6 +1,7 @@
 [
   {
     food_id: 1,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bdKKaTySsc4t8ahzTXQIG87Ls_J8ph907w&s",
     name: "Margherita Pizza",
     description:
       "Classic Italian pizza with fresh mozzarella, tomatoes, and basil",
@@ -19,6 +20,7 @@
   {
     food_id: 2,
     name: "Pepperoni Pizza",
+    img: "https://www.simplyrecipes.com/thmb/KE6iMblr3R2Db6oE8HdyVsFSj2A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-1024x682-583b275444104ef189d693a64df625da.jpg",
     description: "Loaded with spicy pepperoni and extra cheese",
     price: 9.49,
     isVeg: true,
@@ -29,6 +31,7 @@
   {
     food_id: 3,
     name: "BBQ Chicken Pizza",
+    img: "https://www.allrecipes.com/thmb/qZ7LKGV1_RYDCgYGSgfMn40nmks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg",
     description: "Grilled chicken, BBQ sauce, onions, and cheddar cheese",
     price: 10.99,
     isVeg: false,
@@ -48,6 +51,7 @@
   {
     food_id: 4,
     name: "Veggie Supreme Pizza",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaLabHCgyK_q1WcBUU_vGfEIZnPj_6lJ9-Ig&s",
     description:
       "Loaded with bell peppers, onions, mushrooms, olives, and tomatoes",
     price: 8.99,
@@ -68,6 +72,7 @@
   {
     food_id: 5,
     name: "Meat Lover’s Pizza",
+    img: "https://www.thespruceeats.com/thmb/xuxwh4RIGcZMgaJE8u3SueM0SoA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/aqIMG_4568fhor-0b89dc5c8c494ee9828ed29805791c5a.jpg",
     description: "A combination of pepperoni, sausage, bacon, and ham",
     price: 11.49,
     isVeg: false,
@@ -89,6 +94,7 @@
   {
     food_id: 6,
     name: "Hawaiian Pizza",
+    img: "https://outgrilling.com/wp-content/uploads/2024/02/Easy-Hawaiian-Pizza-Recipe-Image-F.jpg",
     description: "A tropical mix of pineapple, ham, and mozzarella",
     price: 9.29,
     isVeg: true,
@@ -105,6 +111,7 @@
   {
     food_id: 7,
     name: "Four Cheese Pizza",
+    img: "https://kitchenatics.com/wp-content/uploads/2020/09/Cheese-pizza-1.jpg",
     description:
       "A rich blend of mozzarella, cheddar, parmesan, and blue cheese",
     price: 10.49,
@@ -123,6 +130,7 @@
   {
     food_id: 8,
     name: "Buffalo Chicken Pizza",
+    img: "https://www.allrecipes.com/thmb/GK6zZbKChUTMmq9vHhGMbyPbQGA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/BuffaloChickenPizza_AR_Feb-Mar-24x3-07e2fcb74a1d472499f4c22980825b13.jpg",
     description: "Spicy buffalo sauce with grilled chicken and ranch drizzle",
     price: 10.79,
     isVeg: false,
@@ -139,6 +147,7 @@
   {
     food_id: 9,
     name: "Truffle Mushroom Pizza",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrTlnGBnpxcosRrNgNXUk2T4wtCXueG22Bw&s",
     description:
       "Gourmet truffle-infused mushrooms with mozzarella and parmesan",
     price: 12.99,
@@ -156,6 +165,7 @@
   {
     food_id: 10,
     name: "Mediterranean Pizza",
+    img: "https://tastyoven.com/wp-content/uploads/2023/05/mediterranean-pizza-image-1.jpg",
     description:
       "A fresh mix of feta cheese, olives, sun-dried tomatoes, and basil",
     price: 11.29,
@@ -175,6 +185,7 @@
   {
     food_id: 11,
     name: "Classic Cheeseburger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFExWftHhBK07UkiHZykqbo1RFUZEa2ecFgg&s",
     description:
       "Juicy beef patty with melted cheese, lettuce, tomato, and special sauce",
     price: 5.99,
@@ -186,6 +197,7 @@
   {
     food_id: 12,
     name: "BBQ Bacon Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description:
       "Smoky BBQ sauce, crispy bacon, cheddar cheese, and caramelized onions",
     price: 7.49,
@@ -204,6 +216,7 @@
   {
     food_id: 13,
     name: "Mushroom Swiss Burger",
+    img: "https://groundbeefrecipes.com/wp-content/uploads/mushroom-swiss-burgers.jpg",
     description:
       "Grilled mushrooms, Swiss cheese, and garlic aioli on a toasted bun",
     price: 6.99,
@@ -221,6 +234,7 @@
   {
     food_id: 14,
     name: "Spicy Jalapeno Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufvcC7zpKOKecp-VKOcF4NU6SLbG7tHLonQ&s",
     description: "Spicy jalapenos, pepper jack cheese, and chipotle mayo",
     price: 6.49,
     isVeg: true,
@@ -237,6 +251,7 @@
   {
     food_id: 15,
     name: "Double Decker Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Two juicy beef patties, double cheese, and house sauce",
     price: 8.99,
     isVeg: false,
@@ -254,6 +269,7 @@
   {
     food_id: 16,
     name: "Crispy Chicken Burger",
+    img: "https://groundbeefrecipes.com/wp-content/uploads/mushroom-swiss-burgers.jpg",
     description: "Crispy fried chicken with coleslaw and spicy mayo",
     price: 6.99,
     isVeg: false,
@@ -264,6 +280,7 @@
   {
     food_id: 17,
     name: "Grilled Chicken Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Healthy grilled chicken breast with avocado and lettuce",
     price: 7.29,
     isVeg: false,
@@ -280,6 +297,7 @@
   {
     food_id: 18,
     name: "Veggie Delight Burger",
+    img: "https://groundbeefrecipes.com/wp-content/uploads/mushroom-swiss-burgers.jpg",
     description: "A tasty vegetarian patty with fresh veggies and cheese",
     price: 5.99,
     isVeg: true,
@@ -297,6 +315,7 @@
   {
     food_id: 19,
     name: "Paneer Tikka Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Spicy grilled paneer with mint mayo and onions",
     price: 6.49,
     isVeg: true,
@@ -307,6 +326,7 @@
   {
     food_id: 20,
     name: "Fish Fillet Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Crispy fish fillet with tartar sauce and lettuce",
     price: 6.99,
     isVeg: false,
@@ -317,6 +337,7 @@
   {
     food_id: 21,
     name: "Buffalo Chicken Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Crispy chicken tossed in buffalo sauce with ranch dressing",
     price: 7.29,
     isVeg: true,
@@ -327,6 +348,7 @@
   {
     food_id: 22,
     name: "Truffle Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Premium beef patty with truffle aioli and arugula",
     price: 9.99,
     isVeg: false,
@@ -337,6 +359,7 @@
   {
     food_id: 23,
     name: "Egg & Cheese Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Fried egg, melted cheese, and a beef patty",
     price: 6.49,
     isVeg: false,
@@ -347,6 +370,7 @@
   {
     food_id: 24,
     name: "Hawaiian Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Grilled pineapple, ham, and Swiss cheese on a juicy patty",
     price: 7.79,
     isVeg: true,
@@ -357,6 +381,7 @@
   {
     food_id: 25,
     name: "Keto Protein Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Bun-less burger with lettuce wrap and extra protein",
     price: 8.49,
     isVeg: true,
@@ -367,6 +392,7 @@
   {
     food_id: 26,
     name: "Mexican Salsa Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description: "Zesty salsa, jalapenos, and guacamole with a juicy patty",
     price: 7.49,
     isVeg: true,
@@ -380,6 +406,7 @@
   {
     food_id: 27,
     name: "Teriyaki Chicken Burger",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9yno8NdtmvvOznE9cdilZnJ06SjtJzkfBRw&s",
     description:
       "Teriyaki-glazed chicken with grilled pineapple and sesame sauce",
     price: 7.29,
@@ -397,6 +424,7 @@
   {
     food_id: 28,
     name: "Cheese Overload Burger",
+    img: "https://www.createwithnestle.ph/sites/default/files/srh_recipes/440a9c7206d782751c58f17fb1c798c9.jpg",
     description:
       "Loaded with 4 types of cheese for an ultimate cheesy experience",
     price: 8.99,
@@ -415,6 +443,7 @@
   {
     food_id: 29,
     name: "Classic Hakka Noodles",
+    img: "https://img-global.cpcdn.com/recipes/fc1a6ef23b258749/680x482cq70/classic-hakka-noodles-recipe-main-photo.jpg",
     description: "Stir-fried noodles with vegetables and soy sauce",
     price: 6.99,
     isVeg: true,
@@ -432,6 +461,7 @@
   {
     food_id: 30,
     name: "Schezwan Noodles",
+    img: "https://cdn.jhattse.com/resize?width=3840&url=https://media-assets.swiggy.com/swiggy/image/upload/07564b754d856b14692f5dbad4d4d1b9&quality=75&type=webp",
     description: "Spicy noodles tossed with Schezwan sauce and vegetables",
     price: 7.49,
     isVeg: true,
@@ -448,6 +478,7 @@
   {
     food_id: 31,
     name: "Chicken Chow Mein",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAMC0Z2G27sK1SKFD1ex2-qqmOW7WLm7kCQ&s",
     description: "Chinese-style stir-fried noodles with chicken and vegetables",
     price: 8.99,
     isVeg: false,
@@ -465,6 +496,7 @@
   {
     food_id: 32,
     name: "Garlic Butter Noodles",
+    img: "https://www.allrecipes.com/thmb/gPoIy93WTKfIT1IMKKdIActgclQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-11920-garlic-butter-sauce-I-DDMFS-4x3-241d90b6bd354ffaba320df7abcdb5c4.jpg",
     description: "Rich and flavorful noodles with butter and garlic",
     price: 7.29,
     isVeg: true,
@@ -475,6 +507,7 @@
   {
     food_id: 33,
     name: "Pad Thai",
+    img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_16:9/k%2FPhoto%2FRecipes%2F2024-04-pad-thai-190%2Fpad-thai-190-251",
     description:
       "Traditional Thai-style noodles with peanuts, tofu, and tamarind sauce",
     price: 9.49,
@@ -492,6 +525,7 @@
   {
     food_id: 34,
     name: "Dragon Noodles",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAMC0Z2G27sK1SKFD1ex2-qqmOW7WLm7kCQ&s",
     description: "Fiery noodles with chili sauce, garlic, and sesame seeds",
     price: 8.79,
     isVeg: true,
@@ -508,6 +542,7 @@
   {
     food_id: 35,
     name: "Egg Hakka Noodles",
+    img: "https://theyummydelights.com/wp-content/uploads/2021/04/egg-hakka-noodles-5-1.jpg",
     description:
       "Chinese-style noodles tossed with scrambled eggs and vegetables",
     price: 7.99,
@@ -526,6 +561,7 @@
   {
     food_id: 36,
     name: "Teriyaki Noodles",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4AKnoOCWUwhxRLWQGwhzWHcMRHgybLB9Cg&s",
     description: "Japanese-style noodles with teriyaki sauce and sesame seeds",
     price: 8.49,
     isVeg: true,
@@ -545,6 +581,7 @@
   {
     food_id: 37,
     name: "Seafood Noodles",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4AKnoOCWUwhxRLWQGwhzWHcMRHgybLB9Cg&s",
     description: "Delicious noodles with shrimp, squid, and Asian spices",
     price: 10.99,
     isVeg: false,
@@ -562,6 +599,7 @@
   {
     food_id: 38,
     name: "Veg Thai Noodles",
+    img: "https://www.thespruceeats.com/thmb/kpnl0p1hMBsESB9wbWRN_0Zdoc4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/thai-stir-fried-noodles-with-vegetables-3217111_hero_01-8f13deb4bcb84fca82f244a504b0d886.jpg",
     description:
       "Thai-style noodles with coconut milk, lemongrass, and fresh vegetables",
     price: 8.29,
@@ -581,6 +619,7 @@
     {
       food_id: 39,
       name: "Chocolate Lava Cake",
+      img: "https://www.melskitchencafe.com/wp-content/uploads/2023/01/updated-lava-cakes7.jpg",
       description: "Warm chocolate cake with a gooey molten chocolate center",
       price: 6.49,
       isVeg: true,
@@ -601,6 +640,7 @@
     {
       food_id: 40,
       name: "Classic Cheesecake",
+      img: "https://www.allrecipes.com/thmb/5_r5-GuF1KQxOs2nrW4EF4F-4ak=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-155222-philadelphia-classic-cheesecake-4x3-hero-5e8c2187a57a4016b5934058ad7d9b5e.jpg",
       description: "Creamy cheesecake with a graham cracker crust",
       price: 7.99,
       isVeg: true,
@@ -620,6 +660,7 @@
     {
       food_id: 41,
       name: "Tiramisu",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwbKMWvt1_GuwGDFCF0VBM_uI3_pAUQL3tyw&s",
       description:
         "Italian coffee-flavored dessert with layers of mascarpone and cocoa",
       price: 8.29,
@@ -637,6 +678,7 @@
     {
       food_id: 42,
       name: "Brownie Sundae",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9O8KWV8Y7sSMtuOouVyPJd01IwKbmoVoqrg&s",
       description:
         "Chocolate brownie topped with vanilla ice cream and hot fudge",
       price: 6.99,
@@ -654,6 +696,7 @@
     {
       food_id: 43,
       name: "Fruit Trifle",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJurahk4oQfuTR0P5Dfxt6r1luQgHcrqy8Q&s",
       description: "Layers of sponge cake, custard, and mixed fruits",
       price: 7.49,
       isVeg: true,
@@ -673,6 +716,7 @@
     {
       food_id: 44,
       name: "Red Velvet Cake",
+      img: "https://cruff.in/cdn/shop/files/hearty-red-velvet-cake.webp?v=1731494478",
       description: "Moist red velvet cake layered with cream cheese frosting",
       price: 8.79,
       isVeg: true,
@@ -690,6 +734,7 @@
     {
       food_id: 45,
       name: "Panna Cotta",
+      img: "https://www.allrecipes.com/thmb/NlP50cO2BjJdN4uGvl5JhW0Rx2A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-72567-Panna-cotta-ddmfs-4x3-14ae724a2a8e4ca3a79c5e27b2b61994.jpg",
       description: "Silky smooth Italian dessert made with vanilla and cream",
       price: 7.99,
       isVeg: true,
@@ -706,6 +751,7 @@
     {
       food_id: 46,
       name: "Churros with Chocolate Dip",
+      img: "https://www.jonathanmelendez.com/wp-content/uploads/2016/11/0S9A10018-2024x1349-1.jpg",
       description: "Crispy fried churros served with rich chocolate sauce",
       price: 6.49,
       isVeg: true,
@@ -719,6 +765,7 @@
     {
       food_id: 47,
       name: "Mango Sticky Rice",
+      img: "https://www.allrecipes.com/thmb/yeUwoCu2irwqGDb-3PHJHnaX2C4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-150313-thai-sweet-sticky-rice-with-mango-khao-neeo-mamuang-ddmfs-4x3-hero-0da7a9b26cce4d07aea44f2f2b6abd95.jpg",
       description:
         "Sweet Thai dessert with coconut-flavored sticky rice and mango slices",
       price: 8.49,
@@ -736,6 +783,7 @@
     {
       food_id: 48,
       name: "Gulab Jamun",
+      img: "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg",
       description:
         "Traditional Indian dessert made with deep-fried milk dumplings soaked in syrup",
       price: 5.99,
