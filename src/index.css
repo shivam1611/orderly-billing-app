@@ -46,7 +46,7 @@ body {
   --test-primary: #fc8019;
 
   /* Gray Shadow Tone light  */
-  --gray-shadow-light: 0px 0px 4px 2px var(--gray-tone);
+  --gray-shadow-light: 0px 0px 3px 2px var(--gray-tone);
 }
 
 
@@ -58,6 +58,7 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  
 }
 
 .global-div1 {
@@ -65,4 +66,30 @@ body {
 }
 .global-div2 {
   grid-area: 1 / 2 / 6 / 6;
+  padding: 2rem;
+
+}
+
+
+
+/* SCROLL BAR CSS  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

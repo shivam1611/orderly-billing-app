@@ -1,6 +1,8 @@
 import Billing from "../../Components/BillingSection/Billing";
-import FoodCard from "../../Components/FoodCard/FoodCard";
+import MenuSlider from "../../Components/Menu Slider/MenuSlider";
+import MenuSection from "../../Components/MenuSection/MenuSection";
 import Navigation from "../../Components/Navigation/Navigation";
+import SearchFilter from "../../Components/Search & Filter/SearchFilter";
 import "./Dashboard.css";
 const Dashboard = () => {
   return (
@@ -13,8 +15,15 @@ const Dashboard = () => {
         <Billing />
       </div>
       <div className="div5">
-        <FoodCard />
-        <FoodCard />
+        <div className="div-5-div1">
+          <SearchFilter />
+        </div>
+        <div className="div-5-div2">
+          <MenuSlider />
+        </div>
+        <div className="div-5-div3">
+          <MenuSection />
+        </div>
       </div>
     </div>
   );
