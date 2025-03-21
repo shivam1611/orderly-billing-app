@@ -3,7 +3,7 @@ import pizza_icon from "../../assets/pizza_icon.png";
 import burger from "../../assets/burger_icon.png";
 import dessert from "../../assets/dessert_icon.png";
 import noodle from "../../assets/noodles_icon.png";
-import main_course from "../../assets/mai_course.png"
+import main_course from "../../assets/mai_course.png";
 
 const MenuSlider = () => {
   return (

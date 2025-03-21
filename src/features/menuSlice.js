@@ -643,7 +643,6 @@ const initialState = {
         "Bell peppers",
       ],
     },
-    [
       {
         food_id: 39,
         name: "Chocolate Lava Cake",
@@ -842,7 +841,6 @@ const initialState = {
         ],
       },
     ],
-  ],
 };
 
 //  menu items reducer

@@ -1,8 +1,9 @@
 import "./SearchFilter.css";
 import veg_icon from "../../assets/Veg_symbol.svg.png";
 import non_veg_icon from "../../assets/non_veg.png";
+import { useEffect, useState } from "react";
 
-const SearchFilter = () => {
+const SearchFilter = ({ search, setSearch }) => {
   return (
     <div className="search-filter-container">
       <div className="search-section">
@@ -10,8 +11,10 @@ const SearchFilter = () => {
           type="text"
           className="dashboard-input-section"
           placeholder="Search here.."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
         />
-        <button className="search-btn">Search</button>
+        {/* <button className="search-btn">Search</button> */}
       </div>
       <div className="sort-section">
         <label className="flex items-center space-x-2">

@@ -1,0 +1,53 @@
+.card {
+  width: 100%;
+  height: 7rem;
+  /* box-shadow: var(--gray-shadow-light); */
+  border: 1px solid var(--gray-tone);
+  border-radius: 0.3rem;
+  display: flex;
+}
+.left_section {
+  width: 35%;
+  height: 100%;
+}
+.left_section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right_section {
+  width: 65%;
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+.food_name {
+  font-size: 0.9rem;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  color: var(--dark-black);
+}
+.price {
+  font-size: 1.2rem;
+  color: var(--green-dark);
+  font-family: var(--font-secondary);
+  font-weight: 600;
+}
+.right_section i{
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 1.13rem;
+  color: var(--primary-red);
+  transition: all .2s ease-out ;
+  cursor: pointer;
+}
+.right_section i:hover{
+  transform: scale(1.15);
+  
+}
