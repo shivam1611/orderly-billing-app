@@ -1,0 +1,40 @@
+/* From Uiverse.io by KSAplay */
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader::before,
+.loader::after {
+  position: absolute;
+  content: "";
+  height: 10em;
+  width: 10em;
+  border: 1.5em solid var(--primary-red);
+  border-radius: 50%;
+  animation: loader_79178 2s linear infinite;
+}
+
+.loader::after {
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+@keyframes loader_79178 {
+  0% {
+    border: 1.5em solid var(--primary-red);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    border: 0 solid var(--primary-red);
+    transform: scale(1);
+    opacity: 0;
+  }
+}

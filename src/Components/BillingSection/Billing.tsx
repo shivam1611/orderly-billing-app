@@ -4,28 +4,9 @@ import styles from "./Billing.module.css";
 // import { add_cart_item } from "../../features/cartSlice.js";
 
 const Billing = () => {
+  const taxes = useSelector((store) => store.taxes);
   const { items, total_amount } = useSelector((store) => store.cart);
-  // const dispatch = useDispatch();
-  // dispatch(
-  //   add_cart_item({
-  //     food_id: 1,
-  //     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bdKKaTySsc4t8ahzTXQIG87Ls_J8ph907w&s",
-  //     name: "Margherita Pizza",
-  //     description:
-  //       "Classic Italian pizza with fresh mozzarella, tomatoes, and basil",
-  //     price: 7.99,
-  //     isVeg: true,
-  //     category: "Pizza",
-  //     offers: ["Buy 1 Get 1 Free on Wednesdays", "10% off for new customers"],
-  //     ingredients: [
-  //       "Tomato sauce",
-  //       "Mozzarella",
-  //       "Basil",
-  //       "Olive oil",
-  //       "Pizza crust",
-  //     ],
-  //   })
-  // );
+
   return (
     <div className={styles.billing}>
       <header className={styles.header}>
@@ -57,7 +38,9 @@ const Billing = () => {
             <p className={styles.dark_title}> ${total_amount}</p>
           </div>
           <div className={styles.esc}>
-            <p className={styles.fade_title}>Tax 5%</p>
+            <p className={styles.fade_title}>
+              Tax {taxes.gstRate + taxes.serviceCharge}%
+            </p>
             <p className={styles.dark_title}>${total_amount}</p>
           </div>
         </div>

@@ -3,14 +3,22 @@ import veg from "../../assets/Veg_symbol.svg.png";
 import non_veg from "../../assets/non_veg.png";
 import { useState } from "react";
 
-const FoodCard = ({ img, name, price, isVeg }) => {
+const FoodCard = ({
+  img,
+  name,
+  price,
+  isVeg,
+  setViewAbout,
+  handleViewAbout,
+  id,
+}) => {
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
 
   return (
     <div className={styles.card}>
       <div className={styles.offer_section}>Offers</div>
-      <div className={styles.img_section}>
+      <div className={styles.img_section} onClick={() => handleViewAbout(id)}>
         <img src={img} alt="Pizza" />
       </div>
       <div className={styles.detail_section}>
@@ -52,8 +60,8 @@ const FoodCard = ({ img, name, price, isVeg }) => {
               onClick={() => {
                 setAdded((a) => !a);
               }}
-            >{!added ? "+ Add" : "Added"}
-              
+            >
+              {!added ? "+ Add" : "Added"}
             </button>
           </div>
         </div>

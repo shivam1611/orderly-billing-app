@@ -37,10 +37,10 @@ const Dashboard = () => {
           <SearchFilter search={search} setSearch={setSearch} />
         </div>
         <div className="div-5-div2">
-          <MenuSlider />
+          <MenuSlider setFilteredArray = {setFilteredArray} />
         </div>
         <div className="div-5-div3">
-          <MenuSection filteredArray={filteredArray} />
+          <MenuSection setSearch={setSearch} filteredArray={filteredArray} />
         </div>
       </div>
     </div>
