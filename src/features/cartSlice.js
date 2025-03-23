@@ -32,6 +32,6 @@ export function add_cart_item(obj) {
   return { type: "cart/add_item", payload: obj };
 }
 
-export function remove_cart_item(obj) {
-  return { type: "cart/remove_item", payload: obj };
+export function remove_cart_item(id) {
+  return { type: "cart/remove_item", payload: id };
 }

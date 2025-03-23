@@ -6,7 +6,14 @@ import NoFood from "../NoFoodFound/NoFood";
 import Loader from "../Loader/Loader"; // Create a Loader component
 import AboutDish from "../AboutDish/AboutDish";
 
-const MenuSection = ({ filteredArray, setSearch, setFilteredArray }) => {
+
+const MenuSection = ({
+  filteredArray,
+  setSearch,
+  setFilteredArray,
+
+  cartItem,
+}) => {
   const menu = useSelector((store) => store.menu.items);
   const [loading, setLoading] = useState(true);
   const [viewAbout, setViewAbout] = useState(false);
@@ -24,7 +31,9 @@ const MenuSection = ({ filteredArray, setSearch, setFilteredArray }) => {
   }
   return (
     <div className={styles.menu_section}>
-      {viewAbout && <AboutDish setViewAbout={setViewAbout} selectedCard = {selectedCard} />}
+      {viewAbout && (
+        <AboutDish setViewAbout={setViewAbout} selectedCard={selectedCard} />
+      )}
       {loading ? (
         <Loader />
       ) : filteredArray.length > 0 ? (
@@ -38,6 +47,8 @@ const MenuSection = ({ filteredArray, setSearch, setFilteredArray }) => {
             setViewAbout={setViewAbout}
             handleViewAbout={handleViewAbout}
             id={food.food_id}
+            
+            cartItem={cartItem}
           />
         ))
       ) : (

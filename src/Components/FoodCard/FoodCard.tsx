@@ -1,7 +1,9 @@
 import styles from "./FoodCard.module.css";
 import veg from "../../assets/Veg_symbol.svg.png";
 import non_veg from "../../assets/non_veg.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { add_cart_item } from "../../features/cartSlice.js";
+import { useDispatch, useSelector } from "react-redux";
 
 const FoodCard = ({
   img,
@@ -13,7 +15,28 @@ const FoodCard = ({
   id,
 }) => {
   const [quantity, setQuantity] = useState(1);
-  const [added, setAdded] = useState(false);
+  const dispatch = useDispatch();
+  const cart = useSelector((store) => store.cart.items);
+  const menu_items = useSelector((store) => store.menu.items);
+
+  const [added, setAdded] = useState(cart.some((food) => food.food_id == id));
+
+  function handleAddItem(id) {
+    if (cart.some((food) => food.food_id == id)) {
+      return; // If item already exists, exit the function
+    }
+    const foundItem = menu_items.find((food) => food.food_id == id);
+    if (foundItem) {
+      // Ensure foundItem is not undefined
+      dispatch(add_cart_item(foundItem));
+    }
+  }
+
+  // Watch the items in cart and then modify the status of card using use Effect
+  useEffect(() => {
+    // Check if the item still exists in cartItem
+    setAdded(cart.some((food) => food.food_id == id));
+  }, [cart]);
 
   return (
     <div className={styles.card}>
@@ -58,7 +81,8 @@ const FoodCard = ({
                 !added ? styles.btn_add_not_selected : styles.btn_add_clicked
               }`}
               onClick={() => {
-                setAdded((a) => !a);
+                setAdded(true);
+                handleAddItem(id);
               }}
             >
               {!added ? "+ Add" : "Added"}

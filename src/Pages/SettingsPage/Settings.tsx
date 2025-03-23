@@ -1,5 +1,5 @@
-
 import Navigation from "../../Components/Navigation/Navigation";
+import SettingsBox from "../../Components/SettingsBox/SettingsBox";
 
 const Settings = () => {
   return (
@@ -7,7 +7,9 @@ const Settings = () => {
       <div className="global-div1">
         <Navigation />
       </div>
-      <div className="global-div2"></div>
+      <div className="global-div2">
+        <SettingsBox />
+      </div>
     </div>
   );
 };

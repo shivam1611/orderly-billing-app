@@ -5,12 +5,17 @@ import MenuSection from "../../Components/MenuSection/MenuSection";
 import Navigation from "../../Components/Navigation/Navigation";
 import SearchFilter from "../../Components/Search & Filter/SearchFilter";
 import "./Dashboard.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { add_cart_item, remove_cart_item } from "../../features/cartSlice.js";
+
 const Dashboard = () => {
   const item = useSelector((store) => store.menu.items);
   const [search, setSearch] = useState("");
   const [filteredArray, setFilteredArray] = useState([]);
+  const [cartItem, setCartItem] = useState([]);
+  const dispatch = useDispatch();
 
+  // Searching the food items in the menu section based on the search
   useEffect(
     function () {
       setTimeout(function () {
@@ -30,17 +35,26 @@ const Dashboard = () => {
       </div>
       <div className="div2">Footer section</div>
       <div className="div3">
-        <Billing />
+        <Billing
+          cartItem={cartItem}
+          setCartItem={setCartItem}
+          // handleDeleteItem={handleDeleteItem}
+        />
       </div>
       <div className="div5">
         <div className="div-5-div1">
           <SearchFilter search={search} setSearch={setSearch} />
         </div>
         <div className="div-5-div2">
-          <MenuSlider setFilteredArray = {setFilteredArray} />
+          <MenuSlider setFilteredArray={setFilteredArray} />
         </div>
         <div className="div-5-div3">
-          <MenuSection setSearch={setSearch} filteredArray={filteredArray} />
+          <MenuSection
+            setSearch={setSearch}
+            filteredArray={filteredArray}
+            
+            cartItem={cartItem}
+          />
         </div>
       </div>
     </div>

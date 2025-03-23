@@ -1,10 +1,11 @@
 import styles from "./AboutDish.module.css";
 import veg from "../../assets/Veg_symbol.svg.png";
 import non_veg from "../../assets/non_veg.png";
-import { p } from "framer-motion/client";
+import { motion } from "framer-motion";
+
 const AboutDish = ({ setViewAbout, selectedCard }) => {
   return (
-    <div className={styles.bg}>
+    <motion.div animate={{opacity:1, y:-5, scale:1.01}} className={styles.bg}>
       <div className={styles.container}>
         <div className={styles.top_container}>
           <div className={styles.basic_header}>
@@ -65,7 +66,7 @@ const AboutDish = ({ setViewAbout, selectedCard }) => {
           <button onClick={() => setViewAbout(false)}>Okay</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -7,16 +7,21 @@ import Registration from "./Pages/RegistrationPage/Registration";
 import Settings from "./Pages/SettingsPage/Settings";
 import PathNotFound from "./Pages/PathNotFound/PathNotFound";
 import Orders from "./Pages/Orders/Orders";
+import MenuSettings from "./Components/MenuSettings/MenuSettings";
+import TaxesSettings from "./Components/TaxesSettings/TaxesSettings";
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Registration />} />
         <Route path="/admin" element={<AdminPanel />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/settings" element={<Settings />}>
+          <Route index element={<MenuSettings />} />
+          <Route path="menu" element={<MenuSettings />} />
+          <Route path="taxes" element={<TaxesSettings />} />
+        </Route>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
-
         <Route path="/orders" element={<Orders />} />
         <Route path="*" element={<PathNotFound />} />
       </Routes>

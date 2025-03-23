@@ -1,0 +1,24 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  /* background: green; */
+}
+.container i{
+    font-size: 3rem;
+    color: var(--primary-red);
+}
+.text{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--dark-black);
+    font-family: var(--font-secondary);
+}
