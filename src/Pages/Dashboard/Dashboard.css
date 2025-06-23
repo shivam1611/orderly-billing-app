@@ -30,7 +30,7 @@
   grid-area: 1 / 2 / 5 / 5;
   display: grid;
   grid-template-columns: 0.4fr 1fr 1fr 1fr 0.8fr;
-  grid-template-rows: 0.52fr 1fr 1fr 1fr .7fr;
+  grid-template-rows: 0.52fr 1fr 1fr 1fr 1.5fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   height: 100%;

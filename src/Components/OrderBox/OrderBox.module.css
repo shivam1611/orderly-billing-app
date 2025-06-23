@@ -1,0 +1,6 @@
+.order_box {
+  width: 10rem;
+  height: 3.2rem;
+  background-color: var(--gray-tone);
+  border-radius: 0.3rem;
+}

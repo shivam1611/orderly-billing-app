@@ -6,12 +6,10 @@ import NoFood from "../NoFoodFound/NoFood";
 import Loader from "../Loader/Loader"; // Create a Loader component
 import AboutDish from "../AboutDish/AboutDish";
 
-
 const MenuSection = ({
   filteredArray,
   setSearch,
   setFilteredArray,
-
   cartItem,
 }) => {
   const menu = useSelector((store) => store.menu.items);
@@ -47,7 +45,6 @@ const MenuSection = ({
             setViewAbout={setViewAbout}
             handleViewAbout={handleViewAbout}
             id={food.food_id}
-            
             cartItem={cartItem}
           />
         ))

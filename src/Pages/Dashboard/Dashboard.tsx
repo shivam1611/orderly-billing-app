@@ -7,6 +7,7 @@ import SearchFilter from "../../Components/Search & Filter/SearchFilter";
 import "./Dashboard.css";
 import { useDispatch, useSelector } from "react-redux";
 import { add_cart_item, remove_cart_item } from "../../features/cartSlice.js";
+import OrdersSection from "../../Components/OrdersSection/OrdersSection.js";
 
 const Dashboard = () => {
   const item = useSelector((store) => store.menu.items);
@@ -33,14 +34,16 @@ const Dashboard = () => {
       <div className="div1">
         <Navigation />
       </div>
-      <div className="div2">Footer section</div>
+      <div className="div2">
+        <OrdersSection />
+      </div>
       <div className="div3">
         <Billing
           cartItem={cartItem}
           setCartItem={setCartItem}
           // handleDeleteItem={handleDeleteItem}
         />
-      </div>
+      </div>````````````````````````````````````
       <div className="div5">
         <div className="div-5-div1">
           <SearchFilter search={search} setSearch={setSearch} />
@@ -52,7 +55,6 @@ const Dashboard = () => {
           <MenuSection
             setSearch={setSearch}
             filteredArray={filteredArray}
-            
             cartItem={cartItem}
           />
         </div>

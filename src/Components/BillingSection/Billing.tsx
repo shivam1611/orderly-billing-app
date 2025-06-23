@@ -128,7 +128,11 @@ const Billing = ({ cartItem, setCartItem, handleDeleteItem }) => {
           <button className={styles.btn_disable}>Cancel</button>
           <button
             className={styles.btn_main}
-            onClick={() => dispatch(add_order(data))}
+            onClick={() => {
+              // console.log(data)
+              dispatch(add_order(data));
+              // console.log(datamain)
+            }}
           >
             Generate Bill
           </button>
